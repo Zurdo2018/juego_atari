@@ -7,6 +7,17 @@ body {
     align-items: center;
 }
 
+body.juego {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .mi-card {
     background-color: #111;
     color: white;
@@ -30,4 +41,62 @@ body {
 .mi-card a:hover {
     background-color: #00ddaa;
     transform: scale(1.1);
+}
+
+
+#gameCanvas {
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 20px #00ffcc88;
+    width: 95%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin-top: 120px; 
+}
+
+.hud {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.hud .tabla {
+    width: 100%;
+    text-align: center;
+}
+
+.hud .tabla table {
+    color: white;
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+
+.hud th {
+    padding: 10px 20px;
+    border: 2px solid #00ffcc;
+    background-color: #111;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.hud td {
+    padding: 10px 20px;
+    border: 2px solid #00ffcc;
+    background-color: #111;
+    font-family: monospace;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#salir {
+    padding: 5px 15px;
+    font-size: 1rem;
+    white-space: nowrap;
 }
