@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mi-card {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 20px #00ffcc88;
+}
+
+.mi-card a {
+    margin-top: 10px;
+    background-color: #00ffcc;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.mi-card a:hover {
+    background-color: #00ddaa;
+    transform: scale(1.1);
+}
