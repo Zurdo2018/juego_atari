@@ -29,18 +29,18 @@ body.juego {
 }
 
 .mi-card a {
-    display: inline-block;            /* Para comportarse como botón */
+    display: inline-block;            
     margin-top: 10px;
     background-color: #00ffcc;
     color: black;
-    border: none;                     /* Elimina el borde mal definido */
+    border: none;                    
     padding: 10px 20px;
     border-radius: 10px;
-    text-decoration: none;            /* Quita el subrayado */
+    text-decoration: none;           
     font-weight: bold;
     transition: background-color 0.3s, transform 0.2s;
     cursor: pointer;
-    box-shadow: 0 4px 6px #00ffcc66;  /* Efecto de sombra */
+    box-shadow: 0 4px 6px #00ffcc66; 
 }
 
 .mi-card a:hover {
@@ -99,18 +99,98 @@ body.juego {
     font-size: 1rem;
     text-align: center;
 }
+/*.hud {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    right: 250px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5); /
+}
+
+.hud .tabla {
+    flex: 1 1 100%;
+    min-width: 250px;
+    text-align: center;
+}
+
+.hud .tabla table {
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+    margin:  auto;
+}
+
+.hud th, .hud td {
+    padding: 8px;
+    border: 2px solid #00ffcc;
+    background-color: #111;
+    font-family: monospace;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#salir {
+    flex: 0 1 auto;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.btn-danger {
+    padding: 8px 15px;
+    font-size: 10 rem;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}*/
+
+/* Responsive: móviles */
+@media (max-width: 600px) {
+    .hud {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #salir {
+        align-self: center;
+        margin-left: 0;
+    }
+
+    .hud th, .hud td {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+}
+
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
 
 .btn-danger {
     padding: 5px 15px;
     font-size: 1rem;
     white-space: nowrap;
-    display: inline-block;            /* Para comportarse como botón */
+    display: inline-block;           
     margin-top: 10px;
     background-color: #ff0000;
     color: rgb(255, 255, 255);
-    border: none;                     /* Elimina el borde mal definido */
+    border: none;                    
     border-radius: 10px;
-    text-decoration: none;            /* Quita el subrayado */
+    text-decoration: none;         
     font-weight: bold;
     transition: background-color 0.3s, transform 0.2s;
     cursor: pointer;
