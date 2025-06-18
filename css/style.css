@@ -29,13 +29,18 @@ body.juego {
 }
 
 .mi-card a {
+    display: inline-block;            /* Para comportarse como botón */
     margin-top: 10px;
     background-color: #00ffcc;
     color: black;
-    border: none;
+    border: none;                     /* Elimina el borde mal definido */
     padding: 10px 20px;
     border-radius: 10px;
-    transition: 0.3s;
+    text-decoration: none;            /* Quita el subrayado */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px #00ffcc66;  /* Efecto de sombra */
 }
 
 .mi-card a:hover {
@@ -95,8 +100,18 @@ body.juego {
     text-align: center;
 }
 
-#salir {
+.btn-danger {
     padding: 5px 15px;
     font-size: 1rem;
     white-space: nowrap;
+    display: inline-block;            /* Para comportarse como botón */
+    margin-top: 10px;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    border: none;                     /* Elimina el borde mal definido */
+    border-radius: 10px;
+    text-decoration: none;            /* Quita el subrayado */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
 }
