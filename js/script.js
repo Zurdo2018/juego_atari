@@ -5,7 +5,7 @@ let paddleWidth = 10, paddleHeight = 100;
 let playerY = canvas.height / 2 - paddleHeight / 2;
 let aiY = canvas.height / 2 - paddleHeight / 2;
 let ballX = canvas.width / 2, ballY = canvas.height / 2;
-let ballSpeedX = 7, ballSpeedY = 5;
+let ballSpeedX = 10, ballSpeedY = 3;
 
 let puntosJugador = 0;
 let puntosIA = 0;

@@ -99,63 +99,7 @@ body.juego {
     font-size: 1rem;
     text-align: center;
 }
-/*.hud {
-    position: absolute;
-    top: 10px;
-    left: 250px;
-    right: 250px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5); /
-}
 
-.hud .tabla {
-    flex: 1 1 100%;
-    min-width: 250px;
-    text-align: center;
-}
-
-.hud .tabla table {
-    width: 100%;
-    color: white;
-    border-collapse: collapse;
-    margin:  auto;
-}
-
-.hud th, .hud td {
-    padding: 8px;
-    border: 2px solid #00ffcc;
-    background-color: #111;
-    font-family: monospace;
-    font-size: 1rem;
-    text-align: center;
-}
-
-#salir {
-    flex: 0 1 auto;
-    margin-top: 10px;
-    margin-left: auto;
-}
-
-.btn-danger {
-    padding: 8px 15px;
-    font-size: 10 rem;
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
-    cursor: pointer;
-}*/
-
-/* Responsive: móviles */
 @media (max-width: 600px) {
     .hud {
         flex-direction: column;
@@ -172,7 +116,6 @@ body.juego {
         padding: 6px;
     }
 }
-
 
 canvas {
   display: block;
