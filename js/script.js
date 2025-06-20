@@ -51,11 +51,9 @@ function resetBall(puntoPara) {
 }
 
 function update() {
-  // Movimiento pelota
   ballX += ballSpeedX;
   ballY += ballSpeedY;
 
-  // Rebote superior/inferior
   if (ballY <= 0 || ballY >= canvas.height) ballSpeedY *= -1;
 
   // Rebote jugador
@@ -82,9 +80,9 @@ function update() {
   // Punto jugador
   if (ballX >= canvas.width) resetBall("jugador");
 
-  // Movimiento IA
-  const velocidadIA = 0.1; // más rápido
-  const error = (Math.random() - 2) * 10; // movimiento aleatorio
+  
+  const velocidadIA = 0.1; 
+  const error = (Math.random() - 2) * 10; 
   aiY += (ballY + error - (aiY + paddleHeight / 2)) + velocidadIA;
 
 }
